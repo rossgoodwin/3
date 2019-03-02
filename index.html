@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rules of Three (Taper #3)</title>
+
+<!-- "Rules of Three", Copyright (C) 2019 Ross Goodwin
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved. This file is offered as-is,
+without any warranty.
+
+This is from the third issue of Taper: Triptychs and Triads, Spring 2019:
+
+https://taper.badquart.to/3/template.html
+
+"Rules of Three"
+A compact reflection on trisyllabic meter and rhyming patterns in English by Ross Goodwin
+
+-->
+	<style>
+	body { margin:0 ; overflow:hidden ; background-color: #000 }
+	a { color:#eee ; text-decoration:none }
+	header { margin:0 ; padding:0 ; background-color:#444 ; color:#bbb ;
+		position:relative ; z-index:1000 }
+	header > h1 { margin:0 ; font-size:12px ; font-family:sans-serif ;
+		border-bottom:1px #999 solid ; padding:5px 10px ; line-height:17px }
+div,video{width:640px;height:640px;display:none;position:fixed}div{z-index:55;border:4px solid transparent;background-color:rgba(51,51,51,.4)}div p{font-size:1.4em;font-family:monospace;color:#FFF;padding-left:32px}video{border:4px ridge #ecf0f1}div:first-of-type,video:first-of-type{transform:rotateY(-45deg) skewY(-5deg);top:152px;left:-85px}div:first-of-type+div,video:first-of-type+video{top:124px;left:470px}div:first-of-type+div+div,video:first-of-type+video+video{transform:rotateY(45deg) skewY(5deg);top:152px;left:1025px}button{position:fixed;bottom:50%;right:50%}.cursor:after{content:"|";opacity:0;animation:cursor .5s infinite}@keyframes cursor{0%,100%,40%{opacity:0}50%,90%{opacity:1}}
+	</style>
+</head>
+<body>
+<header id=nav>
+	<h1>
+		<a href="index.html">Taper #3 :
+		Triptychs and Triads</a> : Spring 2019 <br>
+		<a href="template.html">"Rules of Three"</a> by
+		<a href="about.html#AUTHOR">Ross Goodwin</a> :
+		<a href="prev.html">&lt;&lt;</a> &mdash;
+		<a href="next.html">&gt;&gt;</a> :
+		<a onclick="fullscreenEvt(true);"> Full screen </a>
+	</h1>
+	<script>
+	function fullscreenListeners(f)
+	{
+		f("mozfullscreenchange",fullscreenEvt);
+		f("MSFullscreenChange",fullscreenEvt);
+		f("fullscreenchange",fullscreenEvt);
+		f("webkitfullscreenchange",fullscreenEvt);
+	}
+	function fullscreenEvt(incomingReq)
+	{
+		fullscreenListeners(document.removeEventListener);
+		if(incomingReq===true||document.mozFullScreen||document.fullscreenElement||
+		document.webkitIsFullScreen||document.msFullscreenElement) {
+			var fsElt;
+			if(window.c instanceof HTMLCanvasElement) fsElt = window.c;
+			else fsElt = document.documentElement;
+			if (fsElt.requestFullscreen) fsElt.requestFullscreen();
+			else if (fsElt.msRequestFullscreen) fsElt.msRequestFullscreen();
+			else if (fsElt.mozRequestFullScreen) fsElt.mozRequestFullScreen();
+			else if (fsElt.webkitRequestFullScreen) fsElt.webkitRequestFullScreen();
+			nav.style.display = "none";
+		}
+		else nav.style.display = "block";
+		if (typeof l==="function") setTimeout(l,200);
+		fullscreenListeners(document.addEventListener);
+	}
+	</script>
+</header>
+<video autoplay></video><video autoplay></video><video autoplay></video><div></div><div></div><div></div><button>👁️</button>
+<script>
+(function(){
+async function seq(a,f) {for (const i of a) await f(...i);}
+Array.prototype.u = Array.prototype.slice;
+let t=x=>(x.charAt(0).toUpperCase()+x.substr(1)),w=window,st=w.setTimeout.bind(w),d=document,m=Math,gt=d.getElementsByTagName.bind(d),ce=d.createElement.bind(d),mr=m.random.bind(m),mf=m.floor.bind(m),va=[].u.call(gt('video')),eb=[].u.call(gt('button'))[0], sa=a=>{for(let i=a.length-1;i>0;i--){const j=mf(mr()*(i+1));[a[i],a[j]]=[a[j],a[i]];}}, uks=()=>{let k = "corr,obj,negl,diss,susp,er,det,perf,ected|ero,exo,despo,chao,aqua,quixo,psycho,robo,hypno,tic|defl,rej,dir,adv,det,insp,conf,conn,diss,er,ection|obj,dir,prot,sel,corr,inf,resp,inv,conn,ective|reson,celebr,medic,cultiv,conjug,perme,fluctu,irrit,oscill,autom,aspir,liquid,gradu,extirp,compens,masterb,ates|fl,sp,b,n,sh,sc,sm,ch,attering|resp,obj,aff,defl,dir,prot,conn,er,diss,ecting|impa,rega,inha,entai,surveil,assai,derai,emai,unfai,ling|equ,upd,rest,ab,ber,rel,neg,cre,ating|dir,resp,corr,inj,inf,refl,prot,conn,ected|p,,sh,g,fl,st,m,b,uttering|dep,desc,def,port,comm,befri,unb,rel,un,ending|pror,trunc,dict,reb,fix,backd,stalem,stagn,ated|cav,all,eng,dead-,off,pret,surr,susp,ender|diss,conf,coll,er,inj,prot,dir,conn,insp,ections|injec,erec,detec,reflec,dereck,defec,connec,inspec,tor|ca,che,ha,me,gue,pe,fe,ve,ba,te,rrier|ov,dem,symph,ir,lac,sard,plankt,pers,tranz,bub,onic|desig,confi,recli,divi,opi,vanhy,resig,combi,ning|repay,portray,dismay,display,doomsay,convey,buffet,decay,obey,crochet,array,ing|disconn,misdir,resurr,self-resp,reel,disaff,inters,interj,ect"; let o = k.split('|').map(s=>{let p = s.split(',');let e = p.pop(); sa(p); return p.map(w=>w+e);}); sa(o); return o;}, r=(n,x)=>{return mf(mr()*(x-n+1)+n);}, tw=(span,text)=>new Promise((q,_)=>{let se=d.getElementById(span);se.classList.add('cursor');let ri=0;for (let j=0;j<text.length;j++){ri+=parseInt(r(64,128));let typing=st(function(y){let ct=se.innerHTML;let nt=ct+text.charAt(y);se.innerHTML=nt;},ri,j);};st(function(){q();},ri);st(function(){se.classList.remove('cursor');},ri+2500);}), poet=()=>{[].u.call(gt('div')).map((dc,ix)=>{dc.style.display='block';let i,j,ns,g,nsi,sis,ta,sw,z,tf,fpa,c=6,a=uks(),pa=[];for(i=0,j=a.length;i<j;i+=c){sis = [];for (let k=0; k<4; k++) {ns=ce('span');g=ce('p');nsi='line-'+ix+'-'+i+'-'+k;sis.push(nsi);ns.id=nsi;g.appendChild(ns);dc.appendChild(g);} ta=a.u(i,i+c); fpa=[];sw=ta.map(x=>x.pop()); fpa.push(t(sw.u(0,3).join(' ')+','));if (sw.length === 6) fpa.push(sw.u(3,6).join(' ')+'.');z=ta.map(x=>x.pop()); tf=[t(z.u(0,3).join(' '))+',',z.u(3,6).join(' ')+'.'];if (z.length === 6) fpa.push(...tf);else fpa.push(tf[0].slice(0,-1)+".");pa.push(...fpa.map((x,i)=>[sis[i], x]));}seq(pa, tw);});}, hs=s=>{eb.style.display='none';Promise.all(va.map(v=>{v.srcObject=s;v.style.display='inline';return new Promise((q,_)=>{v.onplay=q});})).then(poet);}
+async function it(e) {hs(await navigator.mediaDevices.getUserMedia({ audio: false, video: { facingMode: "user", width: 480, height: 480 } }));}
+eb.addEventListener('click',it);})();
+</script>
+</body>
+</html>
